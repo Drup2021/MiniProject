@@ -10,9 +10,17 @@ $conn = mysqli_connect($server, $username, $password, $database);
             die("Error". mysqli_connect_error());
         }
  
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $id = $_POST['id'];
+    // "DELETE FROM images WHERE `images`.`id` = 7"
+    $sql = "DELETE FROM `images` WHERE `images`.`id` = $id";
+    $result = mysqli_query($conn, $sql);
+}
 // Get image data from database 
 $sql = "SELECT * FROM `images`";
 $result = mysqli_query($conn, $sql);
+
+
 ?>
 <!-- Display images with BLOB data from database -->
 <!doctype html>
@@ -32,7 +40,9 @@ $result = mysqli_query($conn, $sql);
     <div class="form-group my-4 mx-4 ">
             <label for="id text-white">Enter Item Id you want to delete: </label>
             <input type="text" class="form-control" id="id" name="id" aria-describedby="emailHelp">
+            <div class = "d-flex justify-content-center my-4">
             <button type="submit" class="btn btn-danger">Delete item</button>
+            </div>
         </div>
     </form>
     <?php 

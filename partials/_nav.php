@@ -20,16 +20,14 @@ echo '<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/loginsystem/welcome.php">Home</a>
         </li>';
-        // if($loggedIn && $useroradmin == "admin"){
+        if($loggedIn && $useroradmin == "admin"){
         echo '<li class="nav-item">
           <a class="nav-link" href="/loginsystem/crud_items.php">Add Items</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/loginsystem/delete.php">Delete items</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/loginsystem/modify.php">Modify items</a>
         </li>';
+        };
         echo '<li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Gallery
