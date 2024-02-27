@@ -19,7 +19,10 @@ echo '<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/loginsystem/welcome.php">Home</a>
-        </li>';
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/loginsystem/search-bar.php">Search</a>
+        </li>';        
         if($loggedIn && $useroradmin == "admin"){
         echo '<li class="nav-item">
           <a class="nav-link" href="/loginsystem/crud_items.php">Add Items</a>
@@ -43,6 +46,7 @@ echo '<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
           <a class="nav-link" href="partials/contact.php">Contact Us</a>
         </li>
       </ul>
+      
       <form class="d-flex">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
