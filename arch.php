@@ -4,7 +4,7 @@
         $server = "127.0.0.1";
         $username = "root";
         $password = "Drup@2008";
-        $database = "images";
+        $database = "test";
         $conn = mysqli_connect($server, $username, $password, $database);
         if (!$conn){
             die("Error". mysqli_connect_error());
@@ -27,7 +27,7 @@ $result = mysqli_query($conn, $sql);
   <body class="bg-dark text-white">
     <?php require '_nav.php';
     ?>
-    <h4 class="text-center my-4 text-warning">Archaeology Gallery</h4>
+    <h4 class="text-center my-4 text-warning">Archaelogy Gallery</h4>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <?php 
     $num = mysqli_num_rows($result);
@@ -37,7 +37,7 @@ if( $num > 0){ ?>
         <?php while($row = mysqli_fetch_assoc($result)){ ?> 
           <div class = "col-4">
           <div class="card">
-                  <img class = "card-img-top object-fit-cover" src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['image']); ?>" height="300" width="300"/> 
+                  <img class = "card-img-top" src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['image']); ?>" /> 
                   <div class="card-body">
                   <?php echo $row['description'];?>
                   </div>

@@ -21,7 +21,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true)
   <body class="bg-dark">
     <!-- Welcome <?php echo "{$_SESSION['username']} and {$_SESSION['useroradmin']}"; ?> -->
     <?php 
-    require 'partials/_nav.php';
+    require '_nav.php';
     ?>
     <div class="mx-4 my-4">
     <div id="carouselExampleIndicators" class="carousel slide">
@@ -76,28 +76,28 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true)
   <img class="card-img-top" src="img/coin_category.jpeg" alt="Card image cap" height="300" width="300">
   <div class="card-body">
     <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="partials/coins.php" class="btn btn-warning d-flex justify-content-center">Coins Gallery</a>
+    <a href="coins.php" class="btn btn-warning d-flex justify-content-center">Coins Gallery</a>
   </div>
 </div>
 <div class="card col-md-3 col-sm-6 bg-dark">
   <img class="card-img-top" src="img/painting.jpeg" alt="Card image cap" height="300" width="300">
   <div class="card-body">
     <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="partials/paintings.php" class="btn btn-warning d-flex justify-content-center">Paintings Gallery</a>
+    <a href="paintings.php" class="btn btn-warning d-flex justify-content-center">Paintings Gallery</a>
   </div>
 </div>
 <div class="card col-md-3 col-sm-6 bg-dark">
   <img class="card-img-top" src="img/archaeology.png" alt="Card image cap" height="300" width="300">
   <div class="card-body">
     <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="partials/arch.php" class="btn btn-warning d-flex justify-content-center">Archaeology Gallery</a>
+    <a href="arch.php" class="btn btn-warning d-flex justify-content-center">Archaeology Gallery</a>
   </div>
 </div>
 <div class="card col-md-3 col-sm-6 bg-dark">
   <img class="card-img-top" src="img/manu2.jpeg" alt="Card image cap" height="300" width="300">
   <div class="card-body">
     <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="partials/manu.php" class="btn btn-warning d-flex justify-content-center">Manuscripts Gallery</a>
+    <a href="manu.php" class="btn btn-warning d-flex justify-content-center">Manuscripts Gallery</a>
   </div>
 </div>
 
@@ -240,7 +240,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true)
        >
     © 2023 Copyright:
     <a class="text-white" href="https://www.iiests.ac.in/"
-       >IIEST.com</a
+       >IIEST</a
       >
   </div>
   <!-- Copyright -->

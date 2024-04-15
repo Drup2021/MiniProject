@@ -32,18 +32,18 @@ echo '<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
         </li>';
         };
         echo '<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Gallery
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="partials/coins.php">Coins</a></li>
-            <li><a class="dropdown-item" href="partials/paintings.php">Paintings</a></li>
-            <li><a class="dropdown-item" href="partials/arch.php">Archaeology</a></li>
-            <li><a class="dropdown-item" href="partials/manu.php">Manuscripts</a></li>
+            <li><a class="dropdown-item" href="coins.php">Coins</a></li>
+            <li><a class="dropdown-item" href="paintings.php">Paintings</a></li>
+            <li><a class="dropdown-item" href="arch.php">Archaeology</a></li>
+            <li><a class="dropdown-item" href="manu.php">Manuscripts</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="partials/contact.php">Contact Us</a>
+          <a class="nav-link" href="contact.php">Contact Us</a>
         </li>
       </ul>
       

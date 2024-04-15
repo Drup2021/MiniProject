@@ -53,7 +53,7 @@
   </head>
   <body class="bg-dark">
     <?php
-    require "partials/_nav.php"; 
+    require "_nav.php"; 
     ?>
 <?php
     if($showAlert)

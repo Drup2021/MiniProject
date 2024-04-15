@@ -63,7 +63,7 @@ echo $statusMsg;
   <title>Testing image upload</title>
 </head>
 <body class="bg-dark text-white">
-<?php require 'partials/_nav.php' ?>
+<?php require '_nav.php'; ?>
 <h2 class = "text-center mt-4 text-warning">Add new items</h2>
 <form action="/loginsystem/crud_items.php" method="post" enctype="multipart/form-data">
 
