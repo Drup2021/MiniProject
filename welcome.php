@@ -80,7 +80,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true)
   </div>
 </div>
 <div class="card col-md-3 col-sm-6 bg-dark">
-  <img class="card-img-top" src="img/painting.jpeg" alt="Card image cap" height="300" width="300">
+  <img class="card-img-top" src="img/painting2.jpeg" alt="Card image cap" height="300" width="300">
   <div class="card-body">
     <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="paintings.php" class="btn btn-warning d-flex justify-content-center">Paintings Gallery</a>
